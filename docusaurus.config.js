@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'boehs.com',
   tagline: '',
-  favicon: 'img/favicon.ico',
+  // favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://boehs.com/',
@@ -43,7 +43,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/ericboehs/boehs.com/tree/master/',
-          showLastUpdateTime: true
+          showLastUpdateTime: true,
         },
         blog: {
           // blogSidebarTitle: 'All posts',
@@ -81,13 +81,18 @@ const config = {
           // },
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/blog/archive', label: 'Archive', position: 'left'},
-          {
-            href: 'https://github.com/ericboehs/boehs.com',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/ericboehs/boehs.com',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
+
+      sidebar: {
+        hideable: true,
+      },
+
       footer: {
         style: 'dark',
         links: [
