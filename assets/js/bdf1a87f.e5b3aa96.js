@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkboehs_com=self.webpackChunkboehs_com||[]).push([[1703],{4542:e=>{e.exports=JSON.parse('{"permalink":"/boehs.com/blog/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":13,"previousPage":"/boehs.com/blog","blogDescription":"Blog","blogTitle":"Blog"}')}}]);
