@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkboehs_com=self.webpackChunkboehs_com||[]).push([[195],{2841:(e,t,c)=>{c.r(t),c.d(t,{default:()=>u});var o=c(7294),s=c(6550);function u(){return o.createElement(s.l_,{to:"/blog"})}}}]);
