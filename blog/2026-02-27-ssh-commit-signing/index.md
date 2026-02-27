@@ -24,9 +24,10 @@ Your key is likely already on GitHub as an **authentication** key, but signing r
 git config --global gpg.format ssh
 git config --global user.signingkey ~/.ssh/id_ed25519.pub
 git config --global commit.gpgsign true
+git config --global tag.gpgsign true
 ```
 
-That's it. All your commits will now be signed with your SSH key. Here's [what that looks like in a `.gitconfig`](https://github.com/ericboehs/dotfiles/commit/fc53afa66f9aca92ede4ce5c4e9d618d7acb2f5d).
+That's it. All your commits and tags will now be signed with your SSH key. Here's [what that looks like in a `.gitconfig`](https://github.com/ericboehs/dotfiles/commit/fc53afa66f9aca92ede4ce5c4e9d618d7acb2f5d).
 
 ### 3. Verify signatures locally (optional)
 
