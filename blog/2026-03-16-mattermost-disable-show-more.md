@@ -43,3 +43,7 @@ This requires `ServiceSettings.EnableLocalMode: true` in `config.json`. Restart 
 - **Hard-refresh** the browser (Cmd+Shift+R) or restart the desktop app after installing — the CSS loads at page init.
 - **Survives updates** — plugins installed via the API are persisted in Mattermost's filestore. They survive container restarts and image upgrades.
 - **Tested on Mattermost 11.3.0.** The CSS class names have been stable for years, but if a future version changes them, inspect the page and update the selectors in `main.js`.
+
+---
+
+*This post was generated with [EARL](https://github.com/ericboehs/earl) (via Opus 4.6), but reviewed by me.*

@@ -111,7 +111,7 @@ SubFolders Verbatim
 Channel work
 Far :work-remote:
 Near :work-local:
-Patterns * !"[Gmail]/All Mail" !"[Gmail]/Important" !"[Gmail]/Starred"
+Patterns * !"[Gmail]/Important" !"[Gmail]/Starred"
 Create Both
 Expunge Both
 SyncState *
@@ -124,7 +124,7 @@ A few things to note:
 - **`SubFolders Verbatim`** — preserves folder names as-is (Fastmail's custom folders, Gmail's `[Gmail]/` prefix).
 - **`Create Both` + `Expunge Both`** — full two-way sync. Deleting locally deletes on the server.
 - **`CopyArrivalDate yes`** — preserves original email dates when syncing.
-- **Gmail `Patterns`** — excludes `All Mail`, `Important`, and `Starred` which are virtual labels that duplicate messages. Without this exclusion you'd sync every message twice.
+- **Gmail `Patterns`** — excludes `Important` and `Starred` which are virtual labels. `All Mail` is included so you can archive messages from the CLI (move from INBOX to `[Gmail]/All Mail`), which mirrors Gmail's native archive behavior. Messages in All Mail will duplicate those in INBOX, but this is necessary for proper archiving with Maildir.
 
 Create the directories and run the initial sync:
 
@@ -787,3 +787,7 @@ Four tools, each doing one thing well:
 All reading from local Maildir under `~/Mail/`. No lock-in, no daemon, no Electron app. Just files and a local search index.
 
 [^1]: This is a [known macOS issue](https://sourceforge.net/p/isync/bugs/66/) with isync's SASL integration. Apple's system SASL library defines callback IDs that upstream cyrus-sasl doesn't, causing the cryptic error code. The `AuthMechs LOGIN` directive bypasses SASL negotiation entirely.
+
+---
+
+*This post was generated with [EARL](https://github.com/ericboehs/earl) (via Opus 4.6), but reviewed by me.*

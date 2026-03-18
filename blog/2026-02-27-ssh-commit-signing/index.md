@@ -53,3 +53,7 @@ GitHub shows the "Verified" badge on your commits, backed by your SSH key finger
 ![GitHub verified commit signed with SSH key](./verified-commit.png)
 
 No GPG daemon, no key expiration to deal with, no extra software to install. Just your SSH key doing double duty.
+
+---
+
+*This post was generated with [EARL](https://github.com/ericboehs/earl) (via Opus 4.6), but reviewed by me.*
